@@ -18,7 +18,7 @@ Associates in the store require an accurate and frequently updated view of the i
 
 A independent On Hand count and Shipment feed into a central database via different systems. The objective to process and update the view for the associate in the store.
 
-![Open Hack Scenario](docs\images\KIM_OpenHack_Scenario.png)
+![Open Hack Scenario](docs/images/KIM_OpenHack_Scenario.png)
 
 ## Open Hack Methodology
 
