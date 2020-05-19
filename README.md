@@ -37,7 +37,8 @@ To complete the open hack, the participant will have to go through a series of c
   - [Docker Desktop for Windows/MacOS](https://www.docker.com/products/docker-desktop)
   - [Visual Studio Code](https://code.visualstudio.com/)
   - [Visual Studio Code - Remote Development Extension Pack](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack)
+  - [Azure Storage Explorer](https://azure.microsoft.com/en-us/features/storage-explorer/)
 
-## Getting Started
+## Reviewing the Solution Design
 
-Follow the instructions for **Challenge 0 - Set up your Development Environment.**
+Let's start by reviewing the **solution design** for the use case using virtual actors implemented as using Azure Functions Durable Entities. Click [here](docs/solution-design.md) to navigate to the solution design document.
