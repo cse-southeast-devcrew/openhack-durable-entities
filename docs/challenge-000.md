@@ -3,16 +3,16 @@
 ## Challenge Objective
 The goal for this challenge is to set up and verify your dev environment in a VS Code dev container.
 
-## Brief Guidance
+## Guidance
 
 ### Install Prerequisites
 Ensure you have a Microsoft Windows 10 or MacOS powered workstation with the following installed:
-- [Docker Desktop for Windows/MacOS](https://www.docker.com/products/docker-desktop)
-- [Visual Studio Code](https://code.visualstudio.com/)
-- [Visual Studio Code - Remote Development Extension Pack](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack)
-- [Azure Storage Explorer](https://azure.microsoft.com/en-us/features/storage-explorer/)
-- [Storage emulator](https://docs.microsoft.com/en-us/azure/storage/common/storage-use-emulator) (Windows) or [create a storage account in Azure](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-create?tabs=azure-portal) (Mac)
-- [Postman](https://www.postman.com/downloads/)
+- [ ] [Docker Desktop for Windows/MacOS](https://www.docker.com/products/docker-desktop)
+- [ ] [Visual Studio Code](https://code.visualstudio.com/)
+- [ ] [Visual Studio Code - Remote Development Extension Pack](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack)
+- [ ] [Azure Storage Explorer](https://azure.microsoft.com/en-us/features/storage-explorer/)
+- [ ] [Storage emulator](https://docs.microsoft.com/en-us/azure/storage/common/storage-use-emulator) (Windows) or [create a storage account in Azure](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-create?tabs=azure-portal) (Mac)
+- [ ] [Postman](https://www.postman.com/downloads/)
 
 ### Set up a VS Code dev container
 
@@ -21,9 +21,7 @@ We'll be using a [dev container](https://code.visualstudio.com/docs/remote/
 1. Install and configure Docker for your operating system.
 
     Windows / macOS:
-    1. Install Docker Desktop for Windows/Mac.
-    2. If not using WSL2 on Windows, right-click on the Docker task bar item, select **Settings / Preferences** and update **Resources > File Sharing** with any locations your source code is kept. See [tips and tricks](https://code.visualstudio.com/docs/remote/troubleshooting#_container-tips) for troubleshooting.
-    3. Enabling [Windows WSL2 back-end](https://aka.ms/vscode-remote/containers/docker-wsl2): Right-click on the Docker taskbar item and select **Settings**. Check **Use the WSL2 based engine** and verify your distribution is enabled under **Resources > WSL Integration.**
+    1. Right-click on the Docker task bar item, select **Settings / Preferences** and update **Resources > File Sharing** with any locations your source code is kept. See [tips and tricks](https://code.visualstudio.com/docs/remote/troubleshooting#_container-tips) for troubleshooting.
 
     Linux:
 
@@ -41,11 +39,19 @@ Next clone the repo locally and set up a dev container for your exi
 4. The VS Code window will reload and start building the dev container. A progress notification provides status updates. You only have to build a dev container the first time you open it; opening the folder after the first successful build will be much quicker.
 5. After the build completes, VS Code will automatically connect to the container.
 You can now interact with your project in VS Code just as you could when opening the project locally. From now on, when you open the project folder, VS Code will automatically pick up and reuse your dev container configuration.
+6. Build and run the starter code, setting a breakpoint to see how the 
 
 ## References
 - [VS Code Developing inside a Container](https://code.visualstudio.com/docs/remote/containers)
 
-
-
 ## Challenge Completion Criteria
-By the end of this challenge you should have the necessary prerequisites installed and your own version of the repo in a dev container running in VS Code.
+To successfully complete this challenge you should have:
+
+- [ ] Installed the necessary prerequisites 
+- [ ] A dev container running in VS Code
+- [ ] The starter code running in the dev container
+
+## Next Steps
+Now that you have your dev environment setup and the starter code running in a dev container in VS Code, it's time to begin processing data from Cosmos.
+
+Proceed to [Challenge 1](https://github.com/cse-southeast-devcrew/openhack-durable-entities/blob/shbanerj/37/docs/challenge-001.md).
