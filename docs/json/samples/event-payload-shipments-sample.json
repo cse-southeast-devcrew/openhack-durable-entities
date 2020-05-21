@@ -1,0 +1,12 @@
+{
+    "id": "div1:store005:0003400029005",
+    "divisionId": "div1",
+    "storeId": "store005",
+    "upc": "0003400029005",
+    "countAdjustment": 3000,
+    "type": "shipmentUpdate",
+    "productName": null,
+    "description": null,
+    "lastShipmentTimestamp": "2020-05-13 9:00:00 AM",
+    "lastUpdateTimestamp": "2020-05-13 9:00:00 AM"
+}

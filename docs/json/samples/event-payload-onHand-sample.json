@@ -1,0 +1,12 @@
+{
+    "id": "div1:store005:0003400029005",
+    "divisionId": "div1",
+    "storeId": "store005",
+    "upc": "0003400029005",
+    "countAdjustment": 1000,
+    "type": "onHandUpdate",
+    "productName": "HERSHEY'S Milk Chocolate Bars",
+    "description": "HERSHEY'S Milk Chocolate Bars are the classic full size chocolate candy bars you’ve always enjoyed!",
+    "lastShipmentTimestamp": null,
+    "lastUpdateTimestamp": "2020-05-13 9:00:00 AM"
+}

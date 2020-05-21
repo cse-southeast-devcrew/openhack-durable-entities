@@ -1,0 +1,86 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "type": "object",
+    "title": "Shipment Schema",
+    "description": "The schema for shipments delivered to a given store.",
+    "default": {},
+    "additionalProperties": true,
+    "required": ["id", "divisionId", "storeId", "items", "arrivalTimestamp"],
+    "properties": {
+        "id": {
+            "$id": "#/properties/id",
+            "type": "string",
+            "title": "The Cosmos DB document id",
+            "description": "A guid representing the shipment id",
+            "examples": ["b501287e-e6e8-45e7-8dfe-d4107e96326a"]
+        },
+        "divisionId": {
+            "$id": "#/properties/divisionId",
+            "type": "string",
+            "title": "The division id",
+            "examples": ["div1"]
+        },
+        "storeId": {
+            "$id": "#/properties/storeId",
+            "type": "string",
+            "title": "The store id",
+            "examples": ["store005"]
+        },
+        "distributorId": {
+            "$id": "#/properties/distributorId",
+            "type": "string",
+            "title": "The id of the distributor delivering items",
+            "examples": ["vendor1"]
+        },
+        "items": {
+            "$id": "#/properties/items",
+            "type": "array",
+            "title": "An array of items in the shipment",
+            "items": {
+                "$ref": "#/definitions/item"
+            },
+            "examples": [
+                [
+                    {
+                        "upc": "0003400029005",
+                        "shipmentAmount": 2000
+                    }
+                ]
+            ]
+        },
+        "arrivalTimestamp": {
+            "$id": "#/properties/arrivalTimestamp",
+            "type": "string",
+            "title": "The date and time of the shipment arrival at the store",
+            "description": "The format is yyyy-MM-dd HH:mm:ss and all dates should be in UTC",
+            "examples": ["2020-05-13 9:00:00 AM"]
+        }
+    },
+    "definitions": {
+        "item": {
+            "type": "object",
+            "title": "An item shipment entry",
+            "examples": [
+                {
+                    "upc": "0003400029005",
+                    "shipmentAmount": 2000
+                }
+            ],
+            "additionalProperties": true,
+            "required": ["upc", "shipmentAmount"],
+            "properties": {
+                "upc": {
+                    "$id": "#/properties/items/items/properties/upc",
+                    "type": "string",
+                    "title": "Universal product code"
+                },
+                "shipmentAmount": {
+                    "$id": "#/properties/items/items/properties/shipmentAmount",
+                    "type": "integer",
+                    "title": "The shipment item count for the item",
+                    "examples": [2000]
+                }
+            }
+        }
+    }
+}

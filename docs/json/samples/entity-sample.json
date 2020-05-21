@@ -1,0 +1,24 @@
+{
+    "storeId": "store005",
+    "divisionId": "div1",
+    "items":{
+        "div1:store005:0003400029005": {
+            "id": "div1:store005:0003400029005",
+            "upc": "0003400029005",
+            "inventoryCount": 3000,
+            "productName": "HERSHEY'S Milk Chocolate Bars",
+            "description": "HERSHEY'S Milk Chocolate Bars are the classic full size chocolate candy bars you’ve always enjoyed!",
+            "lastShipmentTimestamp": "2020-05-13 2:00:00 AM",
+            "lastUpdateTimestamp": "2020-05-13 9:00:00 AM"
+        },
+        "div1:store005:0003400029821": {
+            "id": "div1:store005:0003400029821",
+            "upc": "0003400029821",
+            "inventoryCount": 1000,
+            "productName": "Kit Kat Bars",
+            "description": "Gimme a break, break me off a piece of that Kit Kat Bar!",
+            "lastShipmentTimestamp": "2020-05-01 2:00:00 AM",
+            "lastUpdateTimestamp": "2020-05-12 10:22:00 AM"
+        }
+    }
+}

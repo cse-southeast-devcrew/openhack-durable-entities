@@ -1,0 +1,68 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "type": "object",
+    "title": "Master Data Store Schema",
+    "description": "The schema for the master data store of products.",
+    "default": {},
+    "additionalProperties": true,
+    "required": ["id", "divisionId", "storeId", "upc", "inventoryCount", "productName", "lastShipmentTimestamp", "lastUpdateTimestamp"],
+    "properties": {
+        "id": {
+            "$id": "#/properties/id",
+            "type": "string",
+            "title": "The Cosmos DB document id",
+            "description": "The format is divisionId:storeId:upc",
+            "examples": ["div1:store005:0003400029005"]
+        },
+        "divisionId": {
+            "$id": "#/properties/divisionId",
+            "type": "string",
+            "title": "The division id",
+            "examples": ["div1"]
+        },
+        "storeId": {
+            "$id": "#/properties/storeId",
+            "type": "string",
+            "title": "The store id",
+            "examples": ["store005"]
+        },
+        "upc": {
+            "$id": "#/properties/upc",
+            "type": "string",
+            "title": "The universal product code",
+            "examples": ["0003400029005"]
+        },
+        "inventoryCount": {
+            "$id": "#/properties/inventoryCount",
+            "type": "integer",
+            "title": "The current inventory of a given item",
+            "examples": [3000]
+        },
+        "productName": {
+            "$id": "#/properties/productName",
+            "type": "string",
+            "title": "The name of the product",
+            "examples": ["HERSHEY'S Milk Chocolate Bars"]
+        },
+        "description": {
+            "$id": "#/properties/description",
+            "type": "string",
+            "title": "The description of the product",
+            "examples": ["HERSHEY'S Milk Chocolate Bars are the classic full size chocolate candy bars you’ve always enjoyed!"]
+        },
+        "lastShipmentTimestamp": {
+            "$id": "#/properties/lastShipmentTimestamp",
+            "type": "string",
+            "title": "The date and time of the last shipment for this product",
+            "description": "The format is yyyy-MM-dd HH:mm:ss and all dates should be in UTC",
+            "examples": ["2020-05-13 9:00:00 AM"]
+        },
+        "lastUpdateTimestamp": {
+            "$id": "#/properties/lastUpdateDateTime",
+            "type": "string",
+            "title": "The date and time of the last update",
+            "description": "The format is yyyy-MM-dd HH:mm:ss and all dates should be in UTC",
+            "examples": ["2020-05-13 9:00:00 AM"]
+        }
+    }
+}

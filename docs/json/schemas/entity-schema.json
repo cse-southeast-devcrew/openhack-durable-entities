@@ -1,0 +1,99 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "type": "object",
+    "title": "Entity Schema",
+    "description": "The schema for the durable entities representing a store and all of its products.",
+    "default": {},
+    "additionalProperties": true,
+    "required": ["storeId", "divisionId", "items"],
+    "properties": {
+        "storeId": {
+            "$id": "#/properties/storeId",
+            "type": "string",
+            "title": "The store id",
+            "examples": ["store005"]
+        },
+        "divisionId": {
+            "$id": "#/properties/divisionId",
+            "type": "string",
+            "title": "The division id",
+            "examples": ["div1"]
+        },
+       "items": {
+            "$id": "#/properties/items",
+            "type": "object",
+            "title": "A dictionary of products at a store.",
+            "additionalProperties": {
+                "type": "object",
+                "additionalProperties": {
+                    "$ref": "#/definitions/product"
+                }
+            }
+       }
+    },
+    "definitions": {
+        "product": {
+            "type": "object",
+            "title": "A product inventory for a store.",
+            "examples": [
+                {
+                    "id": "div1:store005:0003400029005",
+                    "upc": "0003400029005",
+                    "inventoryCount": 3000,
+                    "productName": "HERSHEY'S Milk Chocolate Bars",
+                    "description": "HERSHEY'S Milk Chocolate Bars are the classic full size chocolate candy bars you’ve always enjoyed!",
+                    "lastShipmentTimestamp": "2020-05-13 2:00:00 AM",
+                    "lastUpdateTimestamp": "2020-05-13 9:00:00 AM"
+                }
+            ],
+            "required": ["id", "upc", "inventoryCount"],
+            "properties": {
+                "id": {
+                    "$id": "#/properties/items/additionalProperties/additionalProperties/properties/id",
+                    "type": "string",
+                    "title": "The Cosmos DB document id",
+                    "description": "The format is divisionId:storeId:upc",
+                    "examples": ["div1:store005:0003400029005"]
+                },
+                "upc": {
+                    "$id": "#/properties/items/additionalProperties/additionalProperties/properties/upc",
+                    "type": "string",
+                    "title": "The universal product code",
+                    "examples": ["0003400029005"]
+                },
+                "inventoryCount": {
+                    "$id": "#/properties/items/additionalProperties/additionalProperties/properties/inventoryCount",
+                    "type": "integer",
+                    "title": "The current inventory of a given item",
+                    "examples": [1000]
+                },
+                "productName": {
+                    "$id": "#/properties/items/additionalProperties/additionalProperties/properties/productName",
+                    "type": "string",
+                    "title": "The name of the product",
+                    "examples": ["HERSHEY'S Milk Chocolate Bars"]
+                },
+                "description": {
+                    "$id": "#/properties/items/additionalProperties/additionalProperties/properties/description",
+                    "type": "string",
+                    "title": "The description of the product",
+                    "examples": ["HERSHEY'S Milk Chocolate Bars are the classic full size chocolate candy bars you’ve always enjoyed!"]
+                },
+                "lastShipmentTimestamp": {
+                    "$id": "#/properties/items/additionalProperties/additionalProperties/properties/lastShipmentTimestamp",
+                    "type": "string",
+                    "title": "The date and time of the last update",
+                    "description": "The format is yyyy-MM-dd HH:mm:ss and all dates should be in UTC",
+                    "examples": ["2020-05-13 9:00:00 AM"]
+                },
+                "lastUpdateTimestamp": {
+                    "$id": "#/properties/items/additionalProperties/additionalProperties/properties/lastUpdateTimestamp",
+                    "type": "string",
+                    "title": "The date and time of the last update",
+                    "description": "The format is yyyy-MM-dd HH:mm:ss and all dates should be in UTC",
+                    "examples": ["2020-05-13 9:00:00 AM"]
+                }
+            }
+        }
+    }
+}

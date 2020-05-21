@@ -1,0 +1,21 @@
+{
+    "id": "b501287e-e6e8-45e7-8dfe-d4107e96326a",
+    "divisionId": "div1",
+    "storeId": "store005",
+    "distributorId": "vendor1",
+    "items": [
+        {
+            "upc": "0303438929029",
+            "shipmentAmount": 1000
+        },
+        {
+            "upc": "1048400029901",
+            "shipmentAmount": 1000
+        },
+        {
+            "upc": "0003400029005",
+            "shipmentAmount": 2000
+        }
+    ],
+    "arrivalTimestamp": "2020-05-13 9:00:00 AM"
+}
