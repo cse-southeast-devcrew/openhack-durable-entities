@@ -25,6 +25,6 @@ To accomplish this challenge, you will use the `mdc` container that you created 
 
 To successfully complete the challenge:
 
-- [ ] Ensure that sending a "shipment" or "onHand" event writes the updated inventory data for the item as a new row in the MDC
+- [ ] Ensure that sending a "shipment" or "onHand" event writes the updated inventory data for the item in the MDC
 - [ ] Ensure that the inventory data written is accurate
 - [ ] ⚠️ Do not write directly to Cosmos DB in the orchestrator!
