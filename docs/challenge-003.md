@@ -6,7 +6,7 @@ For the last challenge, we want to write the aggregations from [Challenge 2](./c
 
 Ultimately, this MDC will be used to quickly retrieve aggregations via some sort of API (which is beyond the scope of this challenge). The objective is to make sure the MDC is kept up-to-date with accurate inventory data.
 
-## Brief Guidance
+## Guidance
 
 This challenge will focus on the red outlined area of the below design:
 
