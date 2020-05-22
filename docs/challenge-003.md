@@ -2,7 +2,7 @@
 
 ## Challenge Objective
 
-For the last challenge, we want to write the aggregations from [Challenge 2](./challenge-002.md) into some "master data collection" (MDC). Again, we'll use a Cosmos DB collection as the MDC. After each store entity is finished aggregating the result, each item's aggregation should be written as a row in the MDC.
+For the last challenge, we want to write the aggregations from [Challenge 2](./challenge-002.md) into some "master data collection" (MDC). Again, we'll use a Cosmos DB collection as the MDC. After each store entity is finished aggregating the result, each item's aggregation should be written as either a new document in the MDC (for the first time we see that item) or as an update to an existing document.
 
 Ultimately, this MDC will be used to quickly retrieve aggregations via some sort of API (which is beyond the scope of this challenge). The objective is to make sure the MDC is kept up-to-date with accurate inventory data.
 
