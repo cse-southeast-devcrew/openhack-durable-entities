@@ -29,29 +29,25 @@ We'll be using a [dev container](https://code.visualstudio.com/docs/remote/
     2. Add your user to the `docker` group by using a terminal to run: `sudo usermod -aG docker $USER`
     3. Sign out and back in again so your changes take effect.
 
-### Open the project in your dev container
+### Open and run the project in your dev container
 
-Next clone the repo locally and set up a dev container for your existing project on your filesystem.
-
-1. Start VS Code, run the **Remote-Containers: Open Folder in Container...** command from the Command Palette (`F1`) or quick actions Status bar item, and select the project folder you would like to set up the container for.
-2. Now pick a starting point for your dev container. You can either select a base dev container definition from a filterable list, or use an existing Dockerfile or Docker Compose file if one exists in the folder you selected.
-3. After picking the starting point for your container, VS Code will add the dev container configuration files to your project (`.devcontainer/devcontainer.json`).
-4. The VS Code window will reload and start building the dev container. A progress notification provides status updates. You only have to build a dev container the first time you open it; opening the folder after the first successful build will be much quicker.
-5. After the build completes, VS Code will automatically connect to the container.
+1. Clone the repo to your local machine.
+2. Start VS Code, run the **Remote-Containers: Open Folder in Container...** command from the Command Palette (`F1`) or quick actions Status bar item, and select your project folder.
+3. The VS Code window will reload and start building the dev container. A progress notification provides status updates. You only have to build a dev container the first time you open it; opening the folder after the first successful build will be much quicker.
+4. After the build completes, VS Code will automatically connect to the container.
 You can now interact with your project in VS Code just as you could when opening the project locally. From now on, when you open the project folder, VS Code will automatically pick up and reuse your dev container configuration.
-6. Build and run the starter code, setting a breakpoint to see how the 
+5. Build and run the starter code. Consider setting a breakpoint to see the counter updated and practice debugging in your environment.
 
 ## References
 - [VS Code Developing inside a Container](https://code.visualstudio.com/docs/remote/containers)
 
 ## Challenge Completion Criteria
-To successfully complete this challenge you should have:
 
-- [ ] Installed the necessary prerequisites 
-- [ ] A dev container running in VS Code
-- [ ] The starter code running in the dev container
+- [ ] All of the necessary prerequisites are installed
+- [ ] Your project is open in a dev container in VS Code
+- [ ] The starter code builds and runs successfully 
 
 ## Next Steps
 Now that you have your dev environment setup and the starter code running in a dev container in VS Code, it's time to begin processing data from Cosmos.
 
-Proceed to [Challenge 1](https://github.com/cse-southeast-devcrew/openhack-durable-entities/blob/shbanerj/37/docs/challenge-001.md).
+Proceed to [Challenge 1](challenge-001.md).
