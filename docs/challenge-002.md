@@ -15,7 +15,7 @@ In this challenge, we'll send the change feed events to a data manager that main
 
 - The data is simulated by a Data Generator that sends json items to Cosmos DB in the format of the [message schemas](message-schema-definitions.md).
 
-### Next Steps
+### For this challenge
 - The data coming from the change feeds need to be transformed into an aggregation friendly schema that conforms to the [event schema sample](suggested-event-schemas.md).
 
 - The new events need be sent to a new durable function which serves as an orchestrator. 
@@ -40,3 +40,8 @@ In this challenge, we'll send the change feed events to a data manager that main
 - [ ] The listeners are updated to transform documents received from Cosmos DB into schema friendly events and send them to an orchestrator.
 - [ ] The orchestrator partitions and sends events received from the listeners to new individual virtual store entities.
 - [ ] Individual store entities are created and are receiving events. 
+
+## Next Steps
+Congrats! We have an orchestrator talking to some basic store entities.
+
+Proceed to [Challenge 3](challenge-003.md).
