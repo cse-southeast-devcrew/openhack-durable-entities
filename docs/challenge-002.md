@@ -4,7 +4,7 @@
 
 ## Brief Guidance
 
-![Focus for Challenge 2](./images/Challenge02Focus.png)
+![Focus for Challenge 2](./images/Challenge02Focus.svg)
 
 ## References
 
