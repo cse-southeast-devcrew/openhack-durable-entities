@@ -10,7 +10,7 @@ Ultimately, this MDC will be used to quickly retrieve aggregations via some sort
 
 This challenge will focus on the red outlined area of the below design:
 
-![Architecture](https://user-images.githubusercontent.com/1093738/82704038-b9f77b80-9c42-11ea-8f64-a88fba66147c.jpeg)
+![Focus for Challenge 3](./images/Challenge03Focus.svg)
 
 To accomplish this challenge, you will use the `mdc` container that you created in [Challenge 1](./challenge-001.md) to store inventory data that the orchestrator receives after calling an entity to perform some aggregation.
 
