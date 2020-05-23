@@ -12,9 +12,9 @@ The challenge objective is to invoke the processing, when the data arrives in th
 
 ## Guidance
 
-As part of this challenge we are focusing on the following red circled area of the design.
+As part of this challenge we are focusing on the following red outlined area of the design.
 
-![Focus for Challenge 1](./images/OpenHack_ProcessingFlow_Challenge01Focus.png)
+![Focus for Challenge 1](./images/Challenge01Focus.svg)
 
 To accomplish this challenge, you will have to connect to your Azure Account and create a new Azure CosmosDB Account and database called - `inventory` using the **SQL API**.
 
