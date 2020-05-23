@@ -23,6 +23,8 @@ In this challenge, we will use the documents updated or added to identify the st
 - The events will be processed by the store durable entities to finally update the Master Data Store in Challenge 3.
 - However, feel free to explore alternative architecture designs that differ from the suggested architecture flow.
 
+![Focus for Challenge 2](./images/Challenge02Focus.svg)
+
 ## References
 
 - [Durable Functions Overview](https://docs.microsoft.com/en-us/azure/azure-functions/durable/durable-functions-overview?tabs=csharp)
