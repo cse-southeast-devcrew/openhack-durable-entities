@@ -3,7 +3,7 @@
 ## Challenge Objective
 In Challenge 1 you set up listeners to detect inserts and updates to the onHand and shipments containers.
 
-In this challenge, we'll send the change feed events to a data manager that maintains its own state and sends them to durable store entities.
+In this challenge, we will use the documents updated or added to identify the store and item they are related to and message the entity responsible to update the store inventory based on the document received.
 
 ## Guidance
 
@@ -16,16 +16,11 @@ In this challenge, we'll send the change feed events to a data manager that main
 - The data is simulated by a Data Generator that sends json items to Cosmos DB in the format of the [message schemas](message-schema-definitions.md).
 
 ### For this challenge
+
 - The data coming from the change feeds need to be transformed into an aggregation friendly schema that conforms to the [event schema sample](suggested-event-schemas.md).
-
 - The new events need be sent to a new durable function which serves as an orchestrator. 
-
 - The orchestrator then needs to partition and serve those events to individual virtual store entities.
-
 - The events will be processed by the store durable entities to finally update the Master Data Store in Challenge 3.
-
-![Suggested Architecture Diagram](./images/OpenHack_ProcessingFlow_Ch2.png)
-
 - However, feel free to explore alternative architecture designs that differ from the suggested architecture flow.
 
 ## References
