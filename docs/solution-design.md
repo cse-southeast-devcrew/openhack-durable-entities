@@ -7,18 +7,18 @@ While there are many ways to achieve the goal we are looking for, for the purpos
 ## Components used and their roles
 
 The following components will be used as part of the solution:
-  
-- CosmosDB account
-  - CosmosDB database: inventory
-    - CosmosDB container: onhand
-    - CosmosDB container: shipments
-    - CosmosDB container: mdc (master data store)
+
+- Cosmos DB account
+  - Cosmos DB database: `inventory`
+    - Cosmos DB container: `onHand`
+    - Cosmos DB container: `shipments`
+    - Cosmos DB container: `mds` (master data store)
 - Azure Functions
-  - Two CosmosDB change feed listeners - listening to  onhand and shipments CosmosDB containers, respectively
+  - Two Cosmos DB change feed listeners - listening to `onHand` and `shipments` Cosmos DB containers, respectively
   - Durable Function Orchestrator
   - Durable Entities as a virtual actors representing each store and state of inventory in each store.
 
-As part of the challenges, we will create the CosmosDB account, CosmosDB database and CosmosDB containers on Azure and build the Azure Functions to process the changes.
+As part of the challenges, we will create the Cosmos DB account, Cosmos DB database and Cosmos DB containers on Azure and build the Azure Functions to process the changes.
 
 ## Processing Sequence
 
@@ -26,7 +26,7 @@ The following diagram describes the interaction between the various components:
 
 ![Processing Flow](./images/OpenHack_ProcessingFlow.png)
 
-The processing starts when documents are fed into the CosmosDB containers (shipments and on hand), which triggers a change feed in CosmosDB.
+The processing starts when documents are fed into the Cosmos DB containers (shipments and on hand), which triggers a change feed in Cosmos DB.
 
 Azure Functions configured to listen to the feed get a list of documents which are added. The Change feed listener convert them to events.
 
@@ -56,4 +56,4 @@ The [Suggested Event Schema](./suggested-event-schemas.md) document define one o
 
 ## Next Step
 
-Now that the design of the solution is clear, let's jump on to [Challenge 0](challenge-000.md), set up your development environment.
+Now that the design of the solution is clear, let's jump on to [Challenge 0](challenge-000.md) to set up your development environment.

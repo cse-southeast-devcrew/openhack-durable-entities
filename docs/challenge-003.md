@@ -2,9 +2,9 @@
 
 ## Challenge Objective
 
-For the last challenge, we want to write the aggregations from [Challenge 2](./challenge-002.md) into some "master data collection" (MDC). Again, we'll use a Cosmos DB collection as the MDC. After each store entity is finished aggregating the result, each item's aggregation should be written as either a new document in the MDC (for the first time we see that item) or as an update to an existing document.
+For the last challenge, we want to write the aggregations from [Challenge 2](./challenge-002.md) into some "master data store" (MDS). Again, we'll use a Cosmos DB collection as the MDS. After each store entity is finished aggregating the result, each item's aggregation should be written as either a new document in the MDS (for the first time we see that item) or as an update to an existing document.
 
-Ultimately, this MDC will be used to quickly retrieve aggregations via some sort of API (which is beyond the scope of this challenge). The objective is to make sure the MDC is kept up-to-date with accurate inventory data.
+Ultimately, this MDS will be used to quickly retrieve aggregations via some sort of API (which is beyond the scope of this challenge). The objective is to make sure the MDS is kept up-to-date with accurate inventory data.
 
 ## Guidance
 
@@ -12,7 +12,7 @@ This challenge will focus on the red outlined area of the below design:
 
 ![Focus for Challenge 3](./images/Challenge03Focus.svg)
 
-To accomplish this challenge, you will use the `mdc` container that you created in [Challenge 1](./challenge-001.md) to store inventory data that the orchestrator receives after calling an entity to perform some aggregation.
+To accomplish this challenge, you will use the `MDS` container that you created in [Challenge 1](./challenge-001.md) to store inventory data that the orchestrator receives after calling an entity to perform some aggregation.
 
 ## References
 
@@ -25,6 +25,6 @@ To accomplish this challenge, you will use the `mdc` container that you created 
 
 To successfully complete the challenge:
 
-- [ ] Ensure that sending a "shipment" or "onHand" event writes the updated inventory data for the item in the MDC
+- [ ] Ensure that sending a "shipment" or "onHand" event writes the updated inventory data for the item in the MDS
 - [ ] Ensure that the inventory data written is accurate
 - [ ] ⚠️ Do not write directly to Cosmos DB in the orchestrator!
