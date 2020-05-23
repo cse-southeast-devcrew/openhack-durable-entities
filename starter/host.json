@@ -1,0 +1,19 @@
+{
+    "version": "2.0",
+    "logging": {
+        "applicationInsights": {
+            "samplingExcludedTypes": "Request",
+            "samplingSettings": {
+                "isEnabled": true
+            }
+        }
+    },
+    "extensions": {
+        "http": {
+            "routePrefix": "api"
+        },
+        "durableTask": {
+            "hubName": "InventoryHub"
+        }
+    }
+}
