@@ -960,7 +960,7 @@
       "version": 50,
       "versionNonce": 1460707962,
       "isDeleted": false,
-      "text": "CosmosDB",
+      "text": "Cosmos DB",
       "font": "20px Virgil",
       "textAlign": "left",
       "baseline": 23
@@ -984,7 +984,7 @@
       "version": 199,
       "versionNonce": 1214420838,
       "isDeleted": false,
-      "text": "CosmosDB",
+      "text": "Cosmos DB",
       "font": "20px Virgil",
       "textAlign": "left",
       "baseline": 23
@@ -1250,7 +1250,7 @@
       "version": 276,
       "versionNonce": 516853295,
       "isDeleted": false,
-      "text": "CosmosDB Account",
+      "text": "Cosmos DB Account",
       "font": "20px Virgil",
       "textAlign": "left",
       "baseline": 23
