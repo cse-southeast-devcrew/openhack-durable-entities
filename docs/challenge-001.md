@@ -1,4 +1,4 @@
-# Challenge 1: Connect Azure Functions as Change Feed Listeners for Azure Cosmos DB Containers
+# Challenge 1: Getting the ingredients
 
 ## Challenge Objective
 
@@ -16,15 +16,7 @@ As part of this challenge we are focusing on the following red outlined area of 
 
 ![Focus for Challenge 1](./images/Challenge01Focus.svg)
 
-To accomplish this challenge, you will have to connect to your Azure Account and create a new Azure Cosmos DB Account and database called - `inventory` using the **SQL API**.
-
-In the Cosmos DB database, create three containers:
-
-- `shipments` (partition key: `/id`) : container for shipment documents.
-- `onHand` (partition key: `/id`) : container for On Hand documents.
-- `mds` (partition key: `/id`): master data store (MDS) container representing the inventory for all stores and all items.
-
-Find a way to observe the changes in the Cosmos DB container and invoke the processing using Azure Functions. The Azure function should log the number of changed documents received and id of the first document.
+To accomplish this challenge, you will have to find a way to observe the changes in the Cosmos DB container and invoke the processing using Azure Functions. The Azure function should log the number of changed documents received and id of the first document.
 
 ## References
 

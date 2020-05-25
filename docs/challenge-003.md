@@ -14,6 +14,8 @@ This challenge will focus on the red outlined area of the below design:
 
 To accomplish this challenge, you will use the `MDS` container that you created in [Challenge 1](./challenge-001.md) to store inventory data that the orchestrator receives after calling an entity to perform some aggregation.
 
+Also once the aggregation is validated, use the data generator to push some data into the on hand and shipment collections and verify the MDS is updated based on new data.
+
 ## References
 
 - [Azure Cosmos DB .NET Client](https://docs.microsoft.com/en-us/dotnet/api/overview/azure/cosmosdb?view=azure-dotnet)
@@ -27,4 +29,5 @@ To successfully complete the challenge:
 
 - [ ] Ensure that sending a "shipment" or "onHand" event writes the updated inventory data for the item in the MDS
 - [ ] Ensure that the inventory data written is accurate
+- [ ] Pump some shipment and on hand data using the Data Generator and see it being processed through to the MDS.
 - [ ] ⚠️ Do not write directly to Cosmos DB in the orchestrator!

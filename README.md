@@ -33,10 +33,10 @@ For each item in a particular store:
 
 To complete the open hack, the participant will have to go through a series of challenges. The challenges are:
 
-1. Challenge 0: Set up and verify your development environment with Visual Studio Code, Azure Function Runtime tools, Azure CLI running in a DEV container.
-2. Challenge 1: Deploy the master data store in Azure as Cosmos DB and hook up Change Feed processors using Azure Functions.
-3. Challenge 2: Use change feed processor to communicate with Durable Entities representing each store.
-4. Challenge 3: Final challenge, use the durable entities to update the Master Data Store.
+- **Challenge 0**: Set up and verify your development environment with Visual Studio
+- **Challenge 1**: Hook up Change Feed listeners using Azure Functions.
+- **Challenge 2**: Use change feed listener to communicate with Durable Entities representing each store.
+- **Challenge 3**: Final challenge, use the durable entities to update the Master Data Store.
 
 ## Prerequisites for the Open Hack
 
