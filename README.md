@@ -20,6 +20,15 @@ A independent On Hand count and Shipment feed into a central database via differ
 
 ![Open Hack Scenario](docs/images/KIM_OpenHack_Scenario.png)
 
+### Business Rule: Reconciling - On Hand Count and Shipment Updates
+
+The business rule for this use case is kept deliberately simple; it does not fully reflect the business rules dictating actual scenarios in stores.
+
+For each item in a particular store:
+
+- **Shipment**: will increment the count of items in the inventory for the store.
+- **On Hand**: will replace the count of items in the inventory for the store.
+
 ## Open Hack Methodology
 
 To complete the open hack, the participant will have to go through a series of challenges. The challenges are:

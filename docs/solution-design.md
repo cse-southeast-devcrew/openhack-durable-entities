@@ -46,6 +46,13 @@ The [Data Store Message Schema Document](./message-schema-definitions.md) provid
 
 The [Suggested Event Schema](./suggested-event-schemas.md) document define one of the ways messages exchanged between the internal components (change feed listener to orchestrator to durable entities) can be structured. It is a recommendation, not a requirement.
 
+## Business Logic - Implementation
+
+The store representing the virtual actor determine the kind of event based on the event schema definition.
+
+- For updates to shipment for a item in a store, the store will add the count to its inventory for the given item.
+- For updates to on hand for the item in a store, the store will replace the value of the count, for the item in its inventory.
+
 ## References
 
 - [Azure Cosmos DB](https://azure.microsoft.com/en-us/free/cosmos-db/)
