@@ -97,8 +97,6 @@ The starter code is already configured, with Visual Studio Code tasks for debugg
 
 Looks like you are on your way to become a savvy Azure Functions Developer!
 
-Review the [Challenge 0](../../docs/challenge-000.md) for the Open Hack and see, if you are done. (I think, you might be... :o)
-
-But wait, wait...here's a hint, take a close look at the list of resources above, some of them might come handy in your next set of challenges.
+Here's a hint, take a close look at the list of resources above, some of them might come handy in your next set of challenges.
 
 Alternatively, return to [main README document](../README.md) or review [Step 1](./vscode-remote-development.md), setting up remote development environment using VS Code and Docker containers or [Step 2](./azurefunctions-storage-setup.md), setting up Azure Storage account for Azure Functions.

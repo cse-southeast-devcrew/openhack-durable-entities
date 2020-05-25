@@ -64,5 +64,6 @@ We will get started using the following steps:
   - C#
   - Docker
   - REST Client
+  - VS Code Live Share Extension Pack
   - Terraform
 - Visual Studio Code Server (software that interacts with VS Code IDE)

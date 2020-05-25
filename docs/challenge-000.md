@@ -26,7 +26,7 @@ For Windows / macOS:
 
 ### Getting started with the Dev Container
 
-Follow the instructions provided in the [Starter](../starter/README.md) folder to get started with Docker container based remote development.
+Follow the instructions provided in the [Starter](../starter) folder to get started with Docker container based remote development.
 
 ### Create Azure Cosmos DB account, database and collections
 
@@ -42,7 +42,7 @@ Using Azure Cosmos DB documentation referenced below, create:
     | shipments      | /id           | container for shipment documents |
     | mds            | /id           | master data store (MDS) container representing the inventory for all stores and all items. |
 
-### Run the data generator to insert shipment records
+### Run the data generator to insert on hand and shipment records
 
 Follow the instructions on [Data Generator](../data-generator) folder to configure and insert dummy records into the onHand and shipment containers.
 
