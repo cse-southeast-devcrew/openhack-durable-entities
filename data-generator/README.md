@@ -1,6 +1,6 @@
 # Data Generator
 
-This is a data generator to create and submit [on hand](../assets/input-onhand-schema.json) and [shipment](../assets/input-shipment-schema.json) documents to Cosmos DB.
+This is a data generator to create and submit [on hand](https://github.com/cse-southeast-devcrew/openhack-durable-entities/blob/master/docs/json/samples/input-onhand-sample.json) and [shipment](https://github.com/cse-southeast-devcrew/openhack-durable-entities/blob/master/docs/json/samples/input-shipment-sample.json) documents to Cosmos DB.
 
 ## Prerequisites
 
