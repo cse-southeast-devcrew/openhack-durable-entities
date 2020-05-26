@@ -1,6 +1,6 @@
 # Data Generator
 
-This is a data generator to create and submit [on hand](docs/json/samples/input-onhand-sample.json) and [shipment](docs/json/samples/input-shipment-sample.json) documents to Cosmos DB.
+This is a data generator to create and submit [on hand](../docs/json/samples/input-onhand-sample.json) and [shipment](../docs/json/samples/input-shipment-sample.json) documents to Cosmos DB.
 
 ## Prerequisites
 
